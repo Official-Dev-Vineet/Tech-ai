@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Tech-ai/static/css/main.cd2efaa2.css",
+    "main.js": "/Tech-ai/static/js/main.3090edcb.js",
+    "index.html": "/Tech-ai/index.html",
+    "main.cd2efaa2.css.map": "/Tech-ai/static/css/main.cd2efaa2.css.map",
+    "main.3090edcb.js.map": "/Tech-ai/static/js/main.3090edcb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd2efaa2.css",
+    "static/js/main.3090edcb.js"
+  ]
+}
