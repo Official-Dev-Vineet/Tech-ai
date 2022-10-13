@@ -1,0 +1,878 @@
+/* header component  */
+.header-container {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+.header-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(30%);
+  position: relative;
+}
+.header-container .header-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.header-text h1,
+.header-text p {
+  width: 50%;
+  text-align: center;
+}
+.get-started {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2em;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  padding: 3em;
+}
+
+/* what we offer section */
+.what-we-offer,
+.how-we-apply,
+.implement-ai,
+.why-work-with-us,
+.our-expertise,
+.cycle-life,
+.industry,
+.flipper {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2em;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  padding: 2em 3em;
+}
+.what-we-offer > h1 {
+  font-size: 2em;
+  text-transform: capitalize;
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+.what-we-offer p {
+  width: 80%;
+  margin: 0 auto;
+}
+.what-we-offer p:last-child {
+  margin-top: 3em;
+  width: 60%;
+}
+.gui {
+  text-align: center;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  place-items: center;
+  margin: 2em auto;
+  padding: 1em;
+  gap: 2em;
+  border-radius: inherit;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+.gui figcaption {
+  margin-top: 1.5em;
+}
+.gui figure {
+  padding: 1em;
+}
+.gui figure:hover {
+  transform: translateY(-0.6em) scale(1.1);
+}
+
+/* our consultants  */
+.our-consultants {
+  padding: 2em 3em;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 3em;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2em;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+.our-consultants .text {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+.our-consultants img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* how to solve */
+.how-we-solve {
+  padding: 2em 3em;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  border-radius: 2em;
+  counter-reset: list;
+  width: 100%;
+}
+.working-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 560px));
+  gap: 1em;
+  place-items: center;
+}
+.how-we-solve .box {
+  display: inline-block;
+  margin: 1em;
+  border: 1px solid #fff;
+  padding: 1em;
+  height: 100%;
+  border-radius: 1em;
+}
+.how-we-solve .box::before {
+  content: counter(list) "______________";
+  counter-increment: list;
+  text-decoration: underline;
+  color: #df9616;
+  font-size: 2em;
+}
+.how-we-solve .box h3 {
+  margin-bottom: 0.5em;
+}
+
+/* how we apply  */
+.how-we-apply {
+  width: 100%;
+}
+.how-we-apply figure:hover {
+  transform: translateY(-1em);
+}
+
+/* implement ai */
+.implement-ai {
+  width: 100%;
+}
+.implement-ai > h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.accordion {
+  width: 80%;
+  margin: 2em auto;
+  padding: 0 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5em 0.5em 0.5em 5em;
+  background-color: #045c4e91;
+}
+.accordion-head {
+  position: relative;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.accordion-head img {
+  margin-right: 1.5em;
+  width: 2em;
+  height: 2em;
+}
+.accordion-head h1 {
+  font-size: 1em;
+}
+.accordion-head span {
+  font-size: 1.8em;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.accordion.active .accordion-head span {
+  transform: rotate(45deg);
+}
+.accordion-details {
+  display: none;
+  margin-left: 3em;
+}
+.accordion-details p {
+  line-height: 1.2;
+  font-size: 1.1em;
+  padding-bottom: 1.5em;
+}
+.accordion-details ul {
+  margin-left: 2em;
+  padding-bottom: 1em;
+}
+.accordion-details ul li {
+  margin-bottom: 1em;
+  position: relative;
+}
+.accordion-details ul li::before {
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #df9616;
+  position: absolute;
+  left: -1.5em;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+}
+.accordion.active .accordion-details {
+  display: block;
+  text-align: left;
+}
+.accordion.active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* why work with us  */
+.why-work-with-us {
+  width: 100%;
+}
+.why-work-with-us > .flex-center {
+  gap: 2em;
+  flex-wrap: wrap;
+}
+section > h1 {
+  text-decoration: underline;
+  text-transform: capitalize;
+  text-align: center;
+}
+.why-work-with-us .box {
+  margin-top: 2em;
+  max-width: 350px;
+  min-width: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 150px;
+  border-radius: 2em;
+  padding: 1em;
+}
+.why-work-with-us .box:hover {
+  transform: translateY(-1em);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+.why-work-with-us .box h2 {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+.why-work-with-us .box p {
+  font-size: 0.8em;
+}
+.why-work-with-us .box img {
+  image-rendering: optimizeQuality;
+  width: 20%;
+}
+
+/* our-expertise */
+.our-expertise {
+  width: 100%;
+}
+.our-expertise p {
+  margin-top: 0.5em;
+}
+.expertise {
+  margin-top: 2em;
+  text-align-last: left;
+}
+.expertise h2 {
+  margin-bottom: 0.5em;
+}
+.image-wrapper-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 1em 0;
+}
+.image-wrapper-container img {
+  width: auto;
+  flex: 0 0 70px;
+  height: 2em;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0.3em;
+}
+.cycle-life {
+  width: 100%;
+}
+section > .btn {
+  margin-top: 1.5em;
+}
+.cycle {
+  margin-top: 1em;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.cycle ul {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  /* overflow:scroll; */
+  height: 100%;
+  counter-reset: list;
+  padding: 0 2em;
+  animation: infinity 15s infinite alternate linear;
+  animation-delay: 3s;
+}
+@keyframes infinity {
+  0% {
+    margin-left: 0;
+  }
+  35% {
+    margin-left: -15%;
+  }
+  65% {
+    margin-left: -25%;
+  }
+  100% {
+    margin-left: -70%;
+  }
+}
+.cycle ul li:nth-child(odd) {
+  transform: translateY(-50px);
+  white-space: nowrap;
+  position: relative;
+}
+.cycle ul li::before {
+  position: absolute;
+  left: -1.5em;
+  content: counter(list);
+  counter-increment: list;
+}
+.cycle ul li:nth-child(odd)::after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 0.25em;
+  background-color: rgb(3, 152, 162);
+  top: 50%;
+  right: -20px;
+}
+.cycle ul li:nth-child(even)::after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 0.25em;
+  background-color: rgb(173, 0, 207);
+  bottom: 0%;
+  right: -20px;
+}
+.cycle ul li:nth-child(even) {
+  transform: translateY(50px);
+  white-space: nowrap;
+  position: relative;
+}
+
+.industry {
+  width: 100%;
+  font-size: 15px;
+}
+.industry > p,
+.timeline > p,
+.why-work-with-us > p {
+  width: 80%;
+  margin: 1em auto;
+}
+.industry .box::before {
+  content: "";
+}
+.industry img {
+  margin-bottom: 1.5em;
+}
+
+/* timeline styling */
+
+.timeline {
+  text-align: center;
+}
+.timeline-container {
+  position: relative;
+  overflow: hidden;
+}
+.line {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 100%;
+  background-color: #df9616;
+}
+.line::before {
+  position: absolute;
+  content: "";
+  height: 1em;
+  width: 1em;
+  border: 1px dotted #df9616;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bottom 10s infinite linear alternate;
+}
+@keyframes bottom {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 50%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0.5;
+    transform: translateX(-50%) scale(1.5);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+.timeline-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+  position: relative;
+}
+.timeline-content::before {
+  content: "";
+  position: absolute;
+  width: 1em;
+  top: 0;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #df9616;
+  /* animation: opacity 2s infinite linear alternate; */
+}
+.timeline-content:nth-child(odd)::before,
+.timeline-content:nth-child(odd)::after {
+  right: 25%;
+}
+.timeline-content:nth-child(even)::before,
+.timeline-content:nth-child(even)::after {
+  left: 25%;
+}
+.timeline-content:nth-child(odd) {
+  transform: translateX(-25%);
+
+  /* background-color: pink; */
+}
+.timeline-content:nth-child(even) {
+  transform: translateX(25%);
+  /* background-color: aqua; */
+}
+.timeline-content::after {
+  content: "";
+  width: 10em;
+  height: 2px;
+  background-color: #df9616;
+  position: absolute;
+  top: calc(0.5em);
+}
+.timeline .content {
+  max-width: 350px;
+  background-color: #df9616;
+  padding: 1em 2em;
+  padding-right: 1em;
+  border-radius: 1em;
+}
+.timeline-content:nth-child(odd) .content h1 {
+  text-align: right;
+  margin-bottom: 0.5em;
+}
+.timeline-content:nth-child(even) .content h1 {
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+.timeline ul {
+  text-align: left;
+  list-style: circle;
+}
+.timeline ul li {
+  list-style-type: disc;
+}
+
+/* work summary card  */
+.column-container .card {
+  border-radius: 1em;
+  padding: 1em;
+}
+.column-container .card img {
+  height: 5em;
+  width: 5em;
+  object-fit: contain;
+  display: block;
+  margin: 1em auto;
+}
+.column-container .card h3 {
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+.column-container .card p {
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+/* step by step styling how we solve  */
+.how-we-solve > p {
+  width: 70%;
+  margin: 1em auto;
+  text-align: center;
+  line-height: 1.5;
+}
+.column-container .box::before {
+  content: counter(list);
+  display: block;
+}
+.column-container .box img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  display: block;
+  margin: 1em auto;
+}
+.column-container .box h3 {
+  text-align: center;
+  font-weight: 300;
+}
+
+/* platform  */
+
+.platform .box {
+  height: auto;
+}
+
+/* column styling overwriting */
+.what-we-offer .column-content {
+  border: #df9616 2px solid;
+  padding: 0.5em;
+  border-radius: 1em;
+  height: auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+.what-we-offer .column-content:last-child{
+  max-width: unset;
+}
+.what-we-offer .column-content img {
+  height: 5em;
+  width: 5em;
+  display: block;
+  margin: 0.5em auto;
+  object-fit: contain;
+}
+.what-we-offer .column-content p {
+  margin: 0.5em auto;
+  padding: 0;
+  width: 90%;
+}
+.what-we-offer .column-content h3{
+  text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .card:last-child {
+    grid-area: unset;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .timeline-content:nth-child(odd) {
+    transform: translateX(-25%);
+  }
+  .timeline-content:nth-child(even) {
+    transform: translateX(25%);
+  }
+  .timeline .content {
+    max-width: 250px;
+  }
+
+  .cycle-life {
+    font-size: 14px;
+  }
+  @keyframes infinity {
+    0% {
+      margin-left: 0;
+    }
+    35% {
+      margin-left: -15%;
+    }
+    65% {
+      margin-left: -55%;
+    }
+    100% {
+      margin-left: -80%;
+    }
+  }
+  .header-text p {
+    width: 60%;
+  }
+  .what-we-offer {
+    width: 100%;
+    padding: 1.5em;
+    font-size: 14px;
+  }
+  .gui {
+    width: 95%;
+    gap: 0em;
+  }
+  .what-we-offer p:last-child {
+    width: 90%;
+    margin-top: 2em;
+  }
+  .our-consultants {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 400px;
+    gap: 1em;
+  }
+  .our-consultants img {
+    filter: drop-shadow(0 0 60px rgba(59, 58, 58, 1));
+  }
+  .our-consultants .text {
+    padding-left: 2em;
+  }
+  .our-consultants .text p {
+    margin-left: 2em;
+    margin-top: 2em;
+  }
+  .accordion {
+    width: 95%;
+    font-size: 14px;
+  }
+  .accordion-details {
+    margin-left: 2em;
+  }
+  .why-work-with-us {
+    font-size: 14px;
+    padding: 1.5em 1.2em;
+  }
+  .why-work-with-us .box {
+    padding: 0.8em;
+    width: 250px;
+  }
+  .why-work-with-us > .flex-center {
+    gap: 1.5em;
+  }
+  .why-work-with-us .flex-center .flex-center img {
+    object-fit: contain;
+  }
+  .how-we-apply {
+    font-size: 14px;
+    padding: 1.5em;
+  }
+  .implement-ai {
+    font-size: 14px;
+  }
+  .our-expertise,
+  .get-started,
+  .how-we-solve {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .header-container {
+    font-size: 14px;
+  }
+  .header-text h1,
+  .header-text p {
+    margin-bottom: 0.8em;
+    width: 70%;
+  }
+  @keyframes infinity {
+    0% {
+      margin-left: 0;
+    }
+    35% {
+      margin-left: -35%;
+    }
+    65% {
+      margin-left: -55%;
+    }
+    100% {
+      margin-left: -125%;
+    }
+  }
+  .line {
+    left: 5%;
+  }
+  .timeline-content:nth-child(even),
+  .timeline-content:nth-child(odd) {
+    transform: translateX(5%);
+  }
+  .timeline-content:nth-child(even)::before,
+  .timeline-content:nth-child(odd)::before,
+  .timeline-content:nth-child(even)::after,
+  .timeline-content:nth-child(odd)::after {
+    left: 0;
+  }
+  .timeline-content:nth-child(even)::after,
+  .timeline-content:nth-child(odd)::after {
+    width: 15em;
+  }
+  .timeline .content {
+    max-width: 300px;
+    width: 100%;
+  }
+  .timeline-content:nth-child(even) .content h1,
+  .timeline-content:nth-child(odd) .content h1 {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 699px) {
+  .column-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 735px) {
+  .cycle-life {
+    font-size: 12px;
+  }
+  @keyframes infinity {
+    0% {
+      margin-left: 0;
+    }
+    35% {
+      margin-left: -75%;
+    }
+    65% {
+      margin-left: -145%;
+    }
+    100% {
+      margin-left: -230%;
+    }
+  }
+  .what-we-offer,
+  .get-started {
+    font-size: 13px;
+  }
+  .gui {
+    width: 90%;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    margin: 1.5em auto;
+    padding: 1em;
+    gap: 1.5em;
+  }
+  .implement-ai,
+  .our-consultants,
+  .how-we-apply,
+  .how-we-solve,
+  .what-we-offer {
+    font-size: 12px;
+    padding: 1em;
+  }
+  .accordion {
+    width: 100%;
+  }
+  .accordion-details {
+    margin-left: 1.5em;
+  }
+  .why-work-with-us .box {
+    min-width: 400px;
+    gap: 2em;
+  }
+
+  .how-we-solve .working-summary {
+    grid-template-columns: 1fr;
+  }
+  .our-expertise {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cycle-life {
+    font-size: 11px;
+  }
+  @keyframes infinity {
+    0% {
+      margin-left: 0;
+    }
+    35% {
+      margin-left: -105%;
+    }
+    65% {
+      margin-left: -205%;
+    }
+    100% {
+      margin-left: -320%;
+    }
+  }
+  .header-container {
+    font-size: 12px;
+  }
+  .header-text h1 {
+    width: 80%;
+    margin-bottom: 0.6em;
+  }
+  .header-text p {
+    width: 90%;
+  }
+  .our-consultants {
+    gap: 1em;
+    padding: 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .gui {
+    width: 70%;
+    grid-template-columns: 1fr;
+    margin: 1.5em auto;
+    padding: 0.5em;
+    gap: 1.5em;
+  }
+  .why-work-with-us .box {
+    min-width: 280px;
+    gap: 14px;
+  }
+  .our-expertise,
+  .get-started,
+  .accordion {
+    font-size: 12px;
+  }
+  .timeline-content:nth-child(odd),
+  .timeline-content:nth-child(even) {
+    transform: translateX(0);
+    margin: 3em 0;
+  }
+  .line {
+    left: 50%;
+  }
+  .timeline-content:nth-child(even)::after,
+  .timeline-content:nth-child(odd)::after,
+  .timeline-content:nth-child(even)::before,
+  .timeline-content:nth-child(odd)::before {
+    display: none;
+  }
+  .timeline .content {
+    max-width: 250px;
+    width: 100%;
+  }
+  .timeline-content:nth-child(even) .content h1,
+  .timeline-content:nth-child(odd) .content h1 {
+    text-align: center;
+  }
+
+  .column-container {
+    grid-template-columns: 1fr;
+  }
+}

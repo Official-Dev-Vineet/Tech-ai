@@ -1,0 +1,308 @@
+/* home header design  */
+.home-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  animation: loading 3s forwards alternate;
+  min-height: calc(100vh - 5.1em);
+  backdrop-filter: blur(20px);
+
+}
+.left {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.left h1 {
+  margin-bottom: 0.6em;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+}
+.left h1 span {
+  font-size: 1.5em;
+}
+.left p {
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.right img {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10% 10% / 40% 50%;
+}
+
+/* header know more container  */
+.know-more-container {
+  padding-top: 20px;
+  border: 0.1em solid #df9816;
+  width: 70%;
+  height: 80%;
+  backdrop-filter: blur(30px) brightness(0%);
+  overflow: scroll;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.know-more-container::-webkit-scrollbar {
+  width: 0;
+}
+.text-container:first-child h1 {
+  text-align: left;
+  margin-bottom: 0.7em;
+}
+.text-container:first-child {
+  line-height: 1.3;
+  width: 50%;
+}
+.text-container:first-child {
+  padding: 0.8em;
+}
+.text-container:not(:first-child) {
+  padding: 2.5em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.792);
+}
+.text-container h1 {
+  margin-bottom: 0.5em;
+}
+.text-container p {
+  padding: 0 1.4em;
+  text-align: left;
+  line-height: 1.2;
+  color: #fff;
+}
+.image-container {
+  width: 40%;
+}
+.image-container img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.dummy-text {
+  padding: 0 3.5em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  line-height: 1.2;
+  text-align: justify;
+}
+.icon-lg {
+  margin-top: 1em;
+  font-size: 2.5em;
+  color: #df9816;
+  animation: transformY 1s forwards ease infinite alternate;
+}
+.icon-close {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 1px solid #df9816;
+  border-radius: 50%;
+  font-size: 2em;
+}
+.text-container:last-child {
+  border-bottom: none;
+}
+@keyframes transformY {
+  100% {
+    transform: translateY(20%);
+  }
+}
+/* main content  */
+.main-content {
+  display: grid;
+  place-items: center;
+  grid-template-columns: minmax(300px, 1fr);
+  padding: 2em;
+  gap: 4em;
+}
+.main-content .text-container {
+  background-color: rgba(0, 0, 0, 0.451);
+  border-radius: 1em;
+backface-visibility: hidden;
+  width: 100%;
+  border: 1px solid #d69616;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  background-image: url(https://www.sbs.com.au/programs/sites/sbs.com.au.programs/files/podcast_images/3d-ai-artificial-intelligence-1166602.jpg);
+  background-size: cover;
+}
+.main-content .text-container:last-child{
+  backdrop-filter:brightness(80%);
+}
+.main-content .text-container p {
+  width: 80%;
+}
+.main-content .text-container img {
+  display: block;
+  margin: 2em;
+  border-radius: 1em;
+  object-fit: cover;
+  width: 25em;
+  height: 25em;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.451);
+}
+.text-container ul{
+  counter-reset: list;
+  margin-top: 2em;
+}
+.text-container ul li{
+  background-color: rgba(0 , 0 ,0 ,0.7);
+  padding:1em 2em;
+  margin-left: 1em;
+  position: relative;
+  margin-bottom: 1em;
+  line-height: 1.2;
+}
+.text-container ul li:nth-child(even){
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.text-container ul li::before{
+  content: counter(list)  " :-";
+  counter-increment: list;
+  margin-right: 0.6em;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #d69616;
+  font-size: 1.5em;
+  
+}
+
+
+
+
+
+/* for tablet and ipad */
+@media screen and (max-width: 1024px) {
+  .left {
+    width: 90%;
+    font-size: 12px;
+    padding: 16px;
+  }
+  .left p {
+    font-size: 1.1em;
+  }
+  .right {
+    width: 100%;
+    padding-right: 20px;
+  }
+  .know-more-container {
+    font-size: 14px;
+  }
+  .text-container {
+    padding: 0;
+  }
+  .icon-close {
+    font-size: 1.5em;
+    height: 1.6em;
+    width: 1.6em;
+    right: 1em;
+  }
+}
+
+/* know more layout managing on laptop */
+@media screen and (min-width: 1025px) and (max-width: 1229px) {
+  .text-container:first-child {
+    line-height: 1.35;
+    width: 60%;
+    font-size: 15px;
+  }
+  .image-container {
+    width: 40%;
+  }
+}
+/* for all types of mobile  */
+@media screen and (max-width: 699px) {
+  .home-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    flex-direction: column;
+    height: max-content;
+  }
+  .left {
+    order: 2;
+    font-size: 12px;
+    padding: 20px;
+    grid-template-columns: 1fr;
+    margin-top: -1rem;
+  }
+  .right {
+    width: 100%;
+  }
+  .image-container img {
+    height: 100%;
+    object-fit: unset;
+    border-radius: 23% 40% / 34% 56%;
+  }
+  .left h1 {
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+  }
+  .left h1 span {
+    font-size: 1.4em;
+  }
+  .right {
+    order: 1;
+    padding: 10px;
+  }
+
+  .know-more-container {
+    width: 90%;
+    padding: 20px 0 0 0;
+    font-size: 12px;
+  }
+  .know-more-header {
+    flex-direction: column;
+  }
+  .text-container {
+    width: 100%;
+    font-size: 10px;
+  }
+  .text-container p {
+    font-size: 1.2em;
+  }
+  .text-container:first-child {
+    width: 100%;
+  }
+  .text-container:first-child h1 {
+    text-align: center;
+  }
+  .main-content .text-container h1 {
+    text-align-last: left;
+  }
+  .dummy-text {
+    line-height: 1.1;
+    text-align: left;
+    padding: 0 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .icon-close {
+    font-size: 1em;
+    right: 1rem;
+    height: 1.3em;
+    width: 1.3em;
+    padding: 0.04em;
+  }
+  .main-content{
+    padding: 0.5em;
+    gap: 2em;
+  }
+  .main-content .text-container {
+    font-size: 12px;
+  }
+  .main-content .text-container p {
+    width: 90%;
+  }
+  .main-content .text-container img{
+    width: 20em;
+    height: 20em;
+  }
+}
