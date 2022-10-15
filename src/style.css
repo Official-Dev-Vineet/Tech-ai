@@ -165,7 +165,6 @@ a:visited {
 a:hover {
   color: #df9816;
 }
-
 /* page 404 not found styling  */
 .notFound_container {
   background-color: rgba(7, 10, 12, 0.838);
@@ -402,7 +401,7 @@ footer {
   place-items: center;
   margin: 2em auto;
 }
-.story{
+.story {
   height: 100%;
 }
 .story .image-fixer {
@@ -413,22 +412,24 @@ footer {
   overflow: hidden;
   border-radius: 2em;
 }
-.story .image-fixer img{
+.story .image-fixer img {
   object-fit: fill;
   scale: 1.2;
 }
-.stories-wrapper .story .content{
-background-color: rgba(0, 0, 0, 0.5);
-padding: 2em 1.5em;
-height: 65%;
-border-radius: 1.5em;
-line-height: 1.2;
+.stories-wrapper .story .content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2em 1.5em;
+  height: 65%;
+  border-radius: 1.5em;
+  line-height: 1.2;
 }
-.stories-wrapper .story .content h2 , .stories-wrapper .story .content h1 , .stories-wrapper .story .content h3{
-    margin-bottom: 0.5em;
-    text-align: center;
+.stories-wrapper .story .content h2,
+.stories-wrapper .story .content h1,
+.stories-wrapper .story .content h3 {
+  margin-bottom: 0.5em;
+  text-align: center;
 }
-.stories-wrapper .story .content p{
+.stories-wrapper .story .content p {
   line-height: 1.5em;
 }
 @media screen and (max-width: 1200px) {
@@ -442,19 +443,18 @@ line-height: 1.2;
   .copyright {
     padding: 2em;
   }
-  .stories-wrapper{
+  .stories-wrapper {
     padding: 1.5em;
     gap: 2em;
   }
-  .story .image-fixer{
+  .story .image-fixer {
     height: 13em;
     width: 100%;
   }
 }
 @media screen and (max-width: 1024px) {
- 
   .grid-three {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2,minmax(250px,1fr));
   }
   .container {
     padding: 0 10px;
@@ -487,19 +487,18 @@ line-height: 1.2;
   .text-wrapper {
     width: 85%;
   }
-  .stories-wrapper{
+  .stories-wrapper {
     grid-template-columns: 1fr;
     width: 95%;
     padding: 0;
-
   }
-  .story{
+  .story {
     display: grid;
     grid-template-columns: 250px 1fr;
-    gap:3em;
-    place-items:start;
+    gap: 3em;
+    place-items: start;
   }
-  .stories-wrapper .story .content{
+  .stories-wrapper .story .content {
     height: 100%;
   }
 }
@@ -553,11 +552,11 @@ line-height: 1.2;
     width: 4em;
     height: 4em;
   }
-  .stories-wrapper .story{
-grid-template-columns: minmax(350px,1fr);
-padding: 2em;    
+  .stories-wrapper .story {
+    grid-template-columns: minmax(350px, 1fr);
+    padding: 2em;
   }
-  .stories-wrapper .story .image-fixer{
+  .stories-wrapper .story .image-fixer {
     height: 18em;
   }
 }

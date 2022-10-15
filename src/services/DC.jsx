@@ -300,7 +300,7 @@ const DC = () => {
             </div>
             <div className="text">
               <img
-                src="https://indatalabs.com/wp-content/uploads/2019/04/icon-accuracy-4.svg"
+                src="https://indatalabs.com/wp-content/uploads/2019/04/icon-accuracy-2.svg"
                 alt="icon-accuracy-4"
               />
               <div className="text-inner">
@@ -314,7 +314,7 @@ const DC = () => {
             </div>
             <div className="text">
               <img
-                src="https://indatalabs.com/wp-content/uploads/2018/04/icon-productivity.svg"
+                src="https://indatalabs.com/wp-content/uploads/2019/04/icon-productivity.svg"
                 alt="icon-productivity"
               />
               <div className="text-inner">
@@ -356,6 +356,253 @@ const DC = () => {
                   intellectual work.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="how-we-solve">
+          <h1>OCR and Data Capture for Logistics & Transportation</h1>
+          <div className="grid-two">
+            <div className="image-fixer">
+              <img
+                src="https://indatalabs.com/wp-content/uploads/2019/04/ocr-scanning.svg"
+                alt="ocr-scanning"
+              />
+            </div>
+            <div className="text">
+              <p>
+                Optical character recognition systems aim to digitize paper
+                documents to enable automated data search, retrieval, and
+                processing with little to no human involvement. OCR systems can
+                help optimize business workflow involving numerous manual tasks.
+                Companies of different sizes can make the most of the technology
+                to meet the consumers’ needs for expedited and more secure
+                goods’ shipment at a lower delivery cost.
+              </p>
+              <br />
+              <p>
+                OCR scanning services provide logistics industry representatives
+                with significant perks:
+              </p>
+              <ul className="list">
+                <li>Automates manual input and cuts paper-based workflow</li>
+                <li>Reduces input errors by more than 90%</li>
+                <li>Enables remote data capture via mobile devices</li>
+                <li>Reduces data capture costs and time by more than 90%</li>
+                <li>Automates transferring captured data</li>
+                <li>Provides efficient automated invoice processing</li>
+                <li>Facilitates invoices and receipts processing</li>
+                <li>
+                  Makes package registration, tracking, and delivery
+                  time-efficient
+                </li>
+                <li>Reduces overall delivery costs</li>
+                <li>Provides web data extraction services if needed</li>
+              </ul>
+            </div>
+          </div>
+          <p style={{ lineHeight: 1.4, letterSpacing: "0.8px" }}>
+            By adopting custom OCR data extraction software, you invest in a
+            solution that automates data capture, both locally and remotely,
+            processes it with a low error rate, ensures timely order delivery,
+            and increases customer loyalty.
+          </p>
+        </section>
+        <section className="what-we-offer">
+          <h1>Other Industries</h1>
+          <p>
+            As a data extraction company, we provide optical character
+            recognition services and help companies across multiple industries
+            optimize their business processes with the help of our automated
+            data capture software.
+          </p>
+          <div className="accordion active">
+            <div className="accordion-head">
+              <h1>Gaming</h1>
+              <span
+                onClick={(e) =>
+                  e.currentTarget.parentElement.parentElement.classList.toggle(
+                    "active"
+                  )
+                }
+              >
+                +
+              </span>
+            </div>
+            <div className="accordion-details">
+              <p>
+                Player metrics have always been the most valuable resource for
+                game developers and analysts. They want to understand players,
+                monitor and improve gameplay, test design hypotheses, and
+                release products based on thoroughly gathered research.
+                <br />
+                <br />
+                We provide our customers with the best OCR services and help
+                them:
+                <br />
+              </p>
+              <ul className="list">
+                <li>improve accuracy</li>
+                <li>reduce errors</li>
+                <li>eliminate manual tasks</li>
+              </ul>
+            </div>
+          </div>
+          <div className="accordion">
+            <div className="accordion-head">
+              <h1>Education</h1>
+              <span
+                onClick={(e) =>
+                  e.currentTarget.parentElement.parentElement.classList.toggle(
+                    "active"
+                  )
+                }
+              >
+                +
+              </span>
+            </div>
+            <div className="accordion-details">
+              <p>
+                The educational sphere deals with huge amounts of paperwork
+                every day. Almost all crucial documents are in a paper format
+                and it can be difficult to find necessary information quickly
+                and store it in a convenient format.
+                <br />
+                <br />
+                This makes it difficult and challenging for educational
+                institutions to offer the best student experience.
+                <br />
+                <br />
+                Our automated data capture services:
+                <br />
+              </p>
+              <ul className="list">
+                <li>optimize educational process</li>
+                <li>eliminate manual data entry errors</li>
+                <li>improve the overall accuracy</li>
+                <li>improve the students experience</li>
+              </ul>
+            </div>
+          </div>
+          <div className="accordion">
+            <div className="accordion-head">
+              <h1>Retails</h1>
+              <span
+                onClick={(e) =>
+                  e.currentTarget.parentElement.parentElement.classList.toggle(
+                    "active"
+                  )
+                }
+              >
+                +
+              </span>
+            </div>
+            <div className="accordion-details">
+              <p>
+                {" "}
+                The use of automated data capture services give you an overview
+                of your customers’ behavior. Additionally, you can easily scan
+                and extract data from various sources.
+                <br />
+                <br />
+                This will give you some interesting insights and ways in which
+                some areas can be optimized.
+                <br />
+                <br />
+                You will be able to:
+                <br />
+              </p>
+              <ul className="list">
+                <li>reduce costs</li>
+                <li>improve customer services </li>
+                <li> increase the efficiency of store operations</li>
+              </ul>
+            </div>
+          </div>
+          <div className="accordion">
+            <div className="accordion-head">
+              <h1>Travel</h1>
+              <span
+                onClick={(e) =>
+                  e.currentTarget.parentElement.parentElement.classList.toggle(
+                    "active"
+                  )
+                }
+              >
+                +
+              </span>
+            </div>
+            <div className="accordion-details">
+              <p>
+                Big data can bring endless opportunities for the travel
+                industry.
+                <br />
+                <br />
+                We help our clients collect and analyze valuable information
+                from different sources at every stage of their customers’
+                journey. We help them improve the customer experience and
+                enhance the service provided.
+                <br />
+                <br />
+                The use of our solution will allow you to:
+                <br />
+              </p>
+              <ul className="list">
+                <li>collect and structure valuable data</li>
+                <li>improve services provided</li>
+                <li>improve customer experience</li>
+              </ul>
+            </div>
+          </div>
+          <p>Outsource your data extraction services to experts.</p>
+          <span className="btn">
+            <Link to="/contact">contact us</Link>
+          </span>
+        </section>
+        <section className="how-to-solve ">
+          <h1>
+            Why Work With <span className="theme-text">AI Tech</span>
+          </h1>
+          <p style={{margin:'0.8em auto',width:'80%',textAlign:'center'}}>
+            At InData Labs, we invest time and effort into delivering the best
+            solutions to our clients and providing first-class data capture and
+            extraction services.
+          </p>
+          <div className="grid-three">
+            <div className="box">
+              <img
+                src="https://indatalabs.com/wp-content/uploads/2019/04/icon-professional-team.svg"
+                alt="icon-professional"
+              />
+              <h3> Top-Notch R&amp;D Team</h3>
+              <p>
+                We are a seasoned development team of over 80 members with years
+                of production experience in artificial intelligence projects and
+                expertise in various domains.
+              </p>
+            </div>
+            <div className="box">
+              <img
+                src="https://indatalabs.com/wp-content/uploads/2019/04/icon-customizable-solutions.svg"
+                alt="icon-customizable-solutions"
+              />
+              <h3>Customizable Solutions</h3>
+              <p>
+                We don’t settle for average. Our solutions are tailored to fit
+                our clients’ exact needs, the nature of their data and the
+                specifics of their business area.
+              </p>
+            </div>
+            <div className="box">
+              <img
+                src="https://indatalabs.com/wp-content/uploads/2019/04/icon-quality-results.svg"
+                alt="icon-quality-results"
+              />
+              <h3>High-Quality Results</h3>
+              <p>
+                We build automated data capture solutions to help you improve
+                data accuracy, reduce input errors, cut paper document
+                processing costs, and concentrate on more creative tasks.
+              </p>
             </div>
           </div>
         </section>
