@@ -186,6 +186,9 @@
 .accordion-head h1 {
   font-size: 1em;
 }
+.accordion.active .accordion-head h1{
+  color: #df9616;
+}
 .what-we-offer .accordion-head h1{
   font-size: 1.6em;
 }

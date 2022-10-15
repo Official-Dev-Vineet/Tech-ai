@@ -562,7 +562,9 @@ const DC = () => {
           <h1>
             Why Work With <span className="theme-text">AI Tech</span>
           </h1>
-          <p style={{margin:'0.8em auto',width:'80%',textAlign:'center'}}>
+          <p
+            style={{ margin: "0.8em auto", width: "80%", textAlign: "center" }}
+          >
             At InData Labs, we invest time and effort into delivering the best
             solutions to our clients and providing first-class data capture and
             extraction services.
@@ -605,6 +607,73 @@ const DC = () => {
               </p>
             </div>
           </div>
+        </section>
+        <section className="how-we-solve">
+          <h1>Customer Success</h1>
+          <div className="stories-wrapper">
+            <div className="story">
+              <div className="image-fixer">
+                <img
+                  src="https://indatalabs.com/wp-content/uploads/2022/08/ocr-solution-and-api.jpg"
+                  alt="ocr-solution-and-api"
+                />
+              </div>
+              <div className="content">
+                <h2>
+                  OCR Solution and API for Secure Infrared Brand Verification
+                </h2>
+                <p>
+                  Our Client was the Netherlands-based startup focused on
+                  creating technologies for the security printing industry to
+                  help brands combat counterfeits in the market. The Client
+                  contacted InData Labs for machine learning consulting services
+                  and expertise in data management and Al software development.
+                  As a result, the InData Labs' team delivered a PoC to evaluate
+                  Computer Vision <span className="theme-text">(OCR)</span>{" "}
+                  tools capabilities.
+                </p>
+              </div>
+            </div>
+            <div className="story">
+              <div className="image-fixer">
+                <img
+                  src="https://indatalabs.com/wp-content/uploads/2021/04/ocr-based-solution-retrieve-data-from-receipts.jpg"
+                  alt="ocr-based-solution-retrieve-data-from-receipts"
+                />
+              </div>
+              <div className="content">
+                <h2>OCR-Based Solution to Retrieve Data from Receipts</h2>
+                <p>
+                  The Client provided the InData Labs' team with a mobile
+                  application designed to store digital receipts. The challenge
+                  was to amplify this app by applying machine learning. Our data
+                  scientists employed optical character recognition technology
+                  to train an algorithm to extract key data from raw images
+                  after improving image quality via classical computer vision
+                  methods.
+                </p>
+              </div>
+            </div>
+            <div className="story">
+              <div className="image-fixer">
+                <img
+                  src="https://indatalabs.com/wp-content/uploads/2021/12/image-analysis-enhance-ticket-processing-sw.jpg"
+                  alt="images-analysis-enhance-ticket-processing-sw"
+                />
+              </div>
+              <div className="content">
+                <h2>Image Analysis to Enhance Ticket Processing Software</h2>
+                <p>
+                  InData Labs provided consulting on a solution in the field of
+                  machine learning and computer vision{" "}
+                  <span className="theme-text">(OCR)</span>. The Client
+                  challenged us to develop a solution for automated digitization
+                  of travel cheques, which requires a large dataset.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p>Automated data capture and machine learning data extraction will generate additional value, increase ROI, automate the workflow, and facilitate tedious tasks. If you want to outsource data capture or extraction services, InData Labs is at your service to offer the best solutions for your business.</p>
         </section>
       </div>
     </>
