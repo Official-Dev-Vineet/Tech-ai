@@ -492,11 +492,25 @@ section > .btn {
   padding-right: 1em;
   border-radius: 1em;
 }
+.timeline .content img{
+  filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.4));
+  display: block;
+  margin-block: 1em ;
+}
+.timeline-content:nth-child(even) .content img{
+  margin-right: auto;
+ 
+}
+.timeline-content:nth-child(odd) .content img{
+  margin-left: auto;
+}
 .timeline-content:nth-child(odd) .content h1 {
   text-align: right;
   margin-bottom: 0.5em;
+  text-decoration: underline;
 }
 .timeline-content:nth-child(even) .content h1 {
+  text-decoration: underline;
   text-align: left;
   margin-bottom: 0.5em;
 }
