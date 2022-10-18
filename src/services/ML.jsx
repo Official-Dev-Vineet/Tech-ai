@@ -83,9 +83,9 @@ const ML = () => {
             </div>
           </div>
           <p>Have an idea of a breakthrough ML solution in mind?</p>
-          <spam className="btn">
+          <span className="btn">
             <Link to="/contact">Let's Discuss your Project</Link>
-          </spam>
+          </span>
         </section>
         <section className="how-to-solve grid-two-wrapper">
           <h1>Our Machine Learning Development Services</h1>

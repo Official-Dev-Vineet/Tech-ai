@@ -35,6 +35,7 @@
   border-radius: 2em;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
   padding: 3em;
+  line-height: 1.5;
 }
 
 /* what we offer section */
@@ -636,6 +637,19 @@ section > .btn {
 .grid-two-wrapper .grid .accordion{
   width: 100%;
 }
+
+
+/* ai tech */
+.yt-video{
+  height:25em;
+  width: 100%;
+  border-radius: 1em;
+}
+
+
+
+
+
 
 
 

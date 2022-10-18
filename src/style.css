@@ -497,6 +497,7 @@ footer {
     grid-template-columns: 250px 1fr;
     gap: 3em;
     place-items: start;
+    border-bottom: 1px solid #df9616;
   }
   .stories-wrapper .story .content {
     height: 100%;
@@ -553,10 +554,12 @@ footer {
     height: 4em;
   }
   .stories-wrapper .story {
-    grid-template-columns: minmax(350px, 1fr);
+    grid-template-columns: minmax(250px, 1fr);
     padding: 2em;
   }
   .stories-wrapper .story .image-fixer {
     height: 18em;
+    width: auto;
   }
+
 }
